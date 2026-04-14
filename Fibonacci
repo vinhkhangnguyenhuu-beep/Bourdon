@@ -1,0 +1,9 @@
+def Fibonacci(n):
+    Fibs = [0,1]
+    for number in range (0,n+1):
+        i = len(Fibs)-1
+        number = Fibs[i]+Fibs[i-1]
+        Fibs.append(number)
+    return Fibs
+
+print (Fibonacci(4299))
